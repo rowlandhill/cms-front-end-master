@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Ramrod</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags unless you know what you are doing -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags unless you know what you are doing -->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+    </head>
+
+    <body class="container-fluid">
+
+
+<!-- [NAV BAR] SECTION | [NAV BAR] SECTION | [NAV BAR] SECTION | [NAV BAR] SECTION | -->
+<!-- [NAV BAR] SECTION | [NAV BAR] SECTION | [NAV BAR] SECTION | [NAV BAR] SECTION | -->
+
+      <nav class="navbar navbar-static-top navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a id="go-home-button" class="navbar-brand" href="#">DMR<sup>2</sup> CMS</a>
+          </div>
+          <ul class="nav navbar-nav navbar-left">
+            <li id="all-pages-button" class="signed-in-view"><a href="#">All Pages</a></li>
+            <li id="my-pages-button" class="signed-in-view"><a href="#">My Pages</a></li>
+            <!-- <li id="show-create-page-forms" class="signed-in-view"><a href="#">+ Page</a></li> -->
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li id="sign-up-show-modal-button" class="signed-out-view"><a href="#">Sign Up</a></li>
+            <li id="sign-in-show-modal-button" class="signed-out-view"><a href="#">Sign In</a></li>
+            <li id="change-password-show-modal-button" class="signed-in-view"><a href="#">Change Password</a></li>
+            <li id="sign-out-button" class="signed-in-view"><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+<!-- USER MESSAGES -->
+
+      <!-- <div id="user-messages" class="user-messages col-xs-12" style="margin: 15px;"></div> -->
+
+      <div class="container welcome-landing-jumbotron signed-out-view">
+        <div class="jumbotron jumbotron-fluid">
+            <h1>Welcome to DMR<sup>2</sup> CMS</h1>
+            <p>Content Management Specialists</p>
+        </div>
+      </div>
+
+      <div id="user-messages" class="user-messages col-xs-12" style="margin: 15px;"></div>
+
+
+
+<!-- CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! -->
+<!-- CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! -->
+<!-- CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! -->
+<!-- CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! -->
+<!-- CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! CONTENT GETS INSERTED HERE! -->
+    <div id="page-load-content" class="col-xs-12"></div>
+
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+<!-- APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | APP GETS INSERTED HERE! | -->
+
+    <div id="app" class="col-xs-12"></div>
+
+
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+<!-- AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | AUTH MODALS | -->
+
+    <!-- Sign Up Modal -->
+    <!-- Sign Up Modal -->
+    <div id="sign-up-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="sign-up-modal-title">Create Account</h4>
+          </div>
+
+          <div class="modal-body">
+
+            <form id="sign-up" class="form-inline signed-out-view">
+
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" name="credentials[email]" class="form-control" autofocus required>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" name="credentials[password]" class="form-control" required>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="pwd">Password Confirmation:</label>
+                <input type="password" name="credentials[password_confirmation]" class="form-control" required>
+              </div>
+              <br>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Create</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <!-- Sign In Modal -->
+    <div id="sign-in-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="sign-in-modal-title">Login</h4>
+          </div>
+
+          <div class="modal-body">
+
+            <form id="sign-in" class="form-inline signed-out-view">
+
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" name="credentials[email]" class="form-control" autofocus required>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" name="credentials[password]" class="form-control" required>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Sign In</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <!-- Change Password Modal -->
+    <div id="change-password-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Change Password</h4>
+          </div>
+
+          <div class="modal-body">
+
+            <form id="change-password" class="form-inline signed-in-view">
+
+              <div class="form-group">
+                <label for="pwd">Old Password:</label>
+                <input type="password" name="passwords[old]" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="pwd">New Password:</label>
+                <input type="password" name="passwords[new]" class="form-control" required>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    </form>
+
+    </body>
+</html>

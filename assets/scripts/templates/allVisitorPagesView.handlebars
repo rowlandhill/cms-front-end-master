@@ -1,0 +1,14 @@
+
+<div class="container all-pages-view signed-in-view">
+{{#each pages as |page|}}
+  <div class="card col-xs-3" style="padding: 20px; height: 200px; margin: 20px;">
+    <div class="card-block" style="padding: 10px">
+      <h3 class="card-title page-card-title">{{page.title}}</h3>
+      <h5 class="card-text page-card-description">Description: {{page.description}}</h5>
+      <button data-id="{{page.id}}" class="btn btn-info view-visitor-page-posts-button">Sign-in to View</button>
+    </div>
+  </div>
+{{/each}}
+
+
+</div>

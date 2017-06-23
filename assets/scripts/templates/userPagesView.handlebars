@@ -1,0 +1,30 @@
+<div class="container welcome-landing-jumbotron signed-in-view">
+  <div class="jumbotron jumbotron-fluid">
+      <h1>My pages</h1>
+      <p>User has <b>{{pages.length}}</b> pages</p>
+      <button id="show-create-page-forms" class="signed-in-view btn btn-lg btn-info">+ Page</button>
+
+      <!-- <div id="user-messages" class="user-messages col-xs-12" style="margin: 15px;"></div> -->
+
+  </div>
+</div>
+<br>
+
+<div class="container user-pages-view signed-in-view">
+{{#each pages as |page|}}
+  <div class="card col-xs-3" style="margin: 20px; padding: 20px;">
+    <h3 class="card-title page-card-title">{{page.title}}</h3>
+    <div class="card-block" style="padding: 10px">
+      <h4 class="card-text page-card-description overflow: auto;">Description: </h4>
+      <p>{{page.description}}</p>
+    </div>
+      <div class="card-footer">
+        <button data-id="{{page.id}}" class="btn btn-info view-page-posts-button">View Posts</button>
+        <br>
+        <button data-id="{{page.id}}" class="btn btn-default update-page-button">Update Page</button>
+        <br>
+        <button data-id="{{page.id}}" class="btn btn-default delete-page-button">Delete Page</button>
+      </div>
+  </div>
+{{/each}}
+</div>

@@ -1,0 +1,31 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Box shadow helper
+@mixin BoxShadowHelper($level: 1){
+  @if $level == 1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  }
+  @if $level == 2 {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  }
+}
+a {transition: .25s all;}
+.card {
+  overflow: auto;
+  @include BoxShadowHelper(1);
+  transition: .25s box-shadow;
+  &:focus,
+  &:hover {@include BoxShadowHelper(2);}
+  min-width: 200px;
+  min-height: 350px;
+}
+.card-inverse .card-img-overlay {
+  background-color: rgba(#333,.85);
+  border-color: rgba(#333,.85);
+}
+
+.user-messages {
+  font-size: 24px;
+  text-align: center;
+}

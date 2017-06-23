@@ -1,0 +1,27 @@
+<div class="container welcome-landing-jumbotron signed-in-view">
+  <div class="jumbotron jumbotron-fluid">
+      <h1>Posts for page </h1>
+      <p>This page has <b>{{posts.length}}</b> posts</p>
+      <button class="btn btn-info view-create-post-fields-button">+ New Post</button>
+
+      <!-- <div id="user-messages" class="user-messages col-xs-12" style="margin: 15px;"></div> -->
+  </div>
+</div>
+
+
+
+<div class="container all-pages-posts-view signed-in-view">
+{{#each posts as |post|}}
+  <div class="card col-xs-3" style="margin: 20px; padding: 20px;">
+    <div class="card-block" style="padding: 10px">
+      <h4 class="card-title post-card-title">{{post.title}}</h4>
+      <h4 class="card-text post-card-description">Description: {{post.description}}</h4>
+      <h6 class="text-muted">{{post.owner}}</h6>
+      <p class="card-text">{{post.content}}</p>
+      <button data-id="{{post.id}}" class="btn btn-warning edit-posts-button">Edit Post</button>
+      <button data-id="{{post.id}}" class="btn btn-danger delete-post-button">Delete Post</button>
+    </div>
+  </div>
+{{/each}}
+</div>
+</div>
