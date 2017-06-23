@@ -6,7 +6,7 @@ When logged in:
     - Users are able to manage the content once it's created: Display it, Edit it, Delete it.
 
 -  Deployed Application - https://team-ramrod-wdi.github.io/front-end/
--  Back End Repository - https://github.com/Team-RamRod-WDI/back-end
+-  Back End Repository - https://github.com/rowlandhill/cms-back-end-master
 
 
 ## Technologies Used
